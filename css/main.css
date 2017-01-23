@@ -252,6 +252,14 @@ header {
     animation-name: arrow;
     animation-duration: 1s; }
 
+.link-pdf {
+  float: left;
+  font-family: "Lustria", serif; }
+  .link-pdf a {
+    color: rgba(194, 5, 8, 0.3);
+    text-shadow: 0 0 1px red;
+    font-weight: bold; }
+
 * {
   margin: 0;
   padding: 0; }
