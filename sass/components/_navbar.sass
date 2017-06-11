@@ -1,0 +1,63 @@
+.navbar
+  position: fixed
+  top: 0
+  left: 0
+  margin-bottom: 0
+  z-index: 999
+  background-color: transparent
+  border: none
+  width: 100%
+  padding-right: 15px
+  font-family: $font2
+  transition: all 0.5s
+  height: 70px
+  @media screen and (max-device-width : 767px)
+    background-color: $color1
+    color: $white
+
+  ul
+    list-style: none
+    padding: 10px
+    @media screen and (max-device-width : 767px)
+
+      padding-right: 0
+    li
+      @media screen and (max-device-width : 767px)
+        background-color: $color1
+        margin: 0
+        padding: 5px 15px
+        width: 100%
+
+  a, a:visited, a:hover
+    color: $color1
+    text-decoration: none
+    padding: 15px 5px
+    transition: all 0.5s
+    border-radius: 5px
+    font-size: 1.1em
+    @media screen and (max-device-width : 767px)
+      color: white
+
+.navbar-scrolled
+  @media screen and (min-device-width : 768px)
+    background-color: $color2-half
+    height: 50px
+    a, a:visited, a:hover
+      color: $color1-dark
+
+.menu-btn
+  float: right
+  width: 50px
+  margin-top: 10px
+  @media screen and (min-device-width: 768px)
+    display: none
+
+.nav-menu
+  @media screen and (max-device-width: 767px)
+    max-height: 0
+    overflow: hidden
+    transition: all 0.5s
+
+.nav-menu-display
+  @media screen and (max-device-width: 767px)
+    max-height: 200px

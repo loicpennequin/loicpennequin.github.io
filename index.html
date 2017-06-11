@@ -1,209 +1,273 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Lustria|Alex+Brush" rel="stylesheet">
-         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-          <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <title>CV de Loïc Pennequin</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV de Loïc Pennequin - Developpeur front-end</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
     </head>
-    <body>
+  <body>
+
+    <nav class="navbar">
+      <img src="assets/menu.png" class="menu-btn" alt="dropdown icon">
+      <ul class="navbar-nav navbar-right nav-menu">
+        <li>
+          <div class="link-effect-wrapper">
+            <a class='link-effect-trigger smooth-scroll' href="#section1">About me</a>
+            <div class="link-border link-border-top"></div>
+            <div class="link-border link-border-bottom"></div>
+            <div class="link-border link-border-left"></div>
+            <div class="link-border link-border-right"></div>
+          </div>
+        </li>
+        <li>
+          <div class="link-effect-wrapper">
+            <a class='link-effect-trigger smooth-scroll' href="#section2">Skills</a>
+            <div class="link-border link-border-top"></div>
+            <div class="link-border link-border-bottom"></div>
+            <div class="link-border link-border-left"></div>
+            <div class="link-border link-border-right"></div>
+          </div>
+        </li>
+        <li>
+          <div class="link-effect-wrapper">
+            <a class='link-effect-trigger smooth-scroll' href="#section3">Experience</a>
+            <div class="link-border link-border-top"></div>
+            <div class="link-border link-border-bottom"></div>
+            <div class="link-border link-border-left"></div>
+            <div class="link-border link-border-right"></div>
+          </div>
+        </li>
+        <li>
+          <div class="link-effect-wrapper">
+            <a class='link-effect-trigger smooth-scroll' href="#section4">Miscellaneous</a>
+            <div class="link-border link-border-top"></div>
+            <div class="link-border link-border-bottom"></div>
+            <div class="link-border link-border-left"></div>
+            <div class="link-border link-border-right"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
 
-        <header>
+    <header class="text-center" id="home">
+      <div id="sketch"></div>
 
-            <div class="langues">
-                <button><a href="#" class="fr">Français</a></button>
-                <button> <a href="#" class="en">English</a></button>
-            </div>
+      <div class="header-content">
+        <h1>Loïc Pennequin</h1>
+        <h2>Front-end Developer</h2>
+        <a href="#section1" class='link-effect-trigger'>
+          <img class="arrow" src="assets/arrow-down.png" alt="arrow">
+        </a>
+        <div class="link-border link-border-top"></div>
+        <div class="link-border link-border-bottom"></div>
+        <div class="link-border link-border-left"></div>
+        <div class="link-border link-border-right"></div>
+      </div>
+      <span class="joke">...et un peu geek sur les bords. Accessoirement.</span>
 
-            <div class="link-pdf">
-                Vous pouvez consulter la version pdf de mon cv <a href="CV_loic_PENNEQUIN.pdf"> ICI </a>
-            </div>
+    </header>
 
-            <img id="fleche1"src="arrow-down.png"/><span class="effect"></span>
-            <img id="fleche2"src="arrow-down.png"/>
-            <div class="titre">
-                <div class="nom">
-                    <span class="effect effect1"></span>
-                    <span class="effect effect2"></span>
-                    <span class="effect effect3"></span>
-                    <span class="effect effect4"></span>
-                    Pennequin Loïc</div>
-                <div class="sous-titre">Webdesigner / Développeur front-end</div>
-            </div>
+    <section id="section1">
+      <h3 id="collapse-section-1">About me</h3>
+      <div id="content-section-1" class="container section-content">
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 text-right">
+            <img class="photo" src="assets/photo.jpg" alt="photo de moi">
+          </div>
+          <div class="col-md-6 col-md-pull-6">
+            <p>Bonjour et bienvenue sur mon CV. Mon nom est Loïc Pennequin (quelle surprise) et je suis un développeur web front-end junior. Après un parcours universitaire éparpillé, j'ai décidé de me recentrer mes objectifs de professionalisation vers mes passions de toujours : l'informatique et internet via une formation de développeur d'applications web/mobile à Pop School Lens.<p>
+            <p>Perfectionniste et curieux de nature, les challenges ne me font pas peur, bien au contraire, et mon attrait prononcé pour les designs inventifs et bien pensés me fournissent les armes necessaires pour penser des interfaces et experiences utilisateur adaptées, ainsi que d'autres adjectifs accrocheurs et bien vendeurs qui font joli sur le CV. Allons à l'essentiel : je suis dingue de programmation et je souhaiterais développer mes capacités dans ce domaine au maximum.</p>
+            <p>Vous pouvez me contacter par les moyens suivants suivantes : </p>
+            <a href="https://www.linkedin.com/in/lo%C3%AFc-pennequin-a90254133/" data-toggle="tooltip" title="LinkedIn">
+              <img class="contact-icon" src="assets/linkedin.png" alt="profil linkedin">
+            </a>
+            <a href="https://github.com/loicpennequin" data-toggle="tooltip" title="Github">
+              <img class="contact-icon" src="assets/github.svg" alt="profil linkedin">
+            </a>
+            <a href="mailto:lo.pennequin@gmail.com" data-toggle="tooltip" title="lo.pennequin@gmail.com">
+              <img class="contact-icon" src="assets/mail.png" alt="profil linkedin">
+            </a>
+          </div>
+        </div>
 
-        </header>
+      </div>
+    </section>
+
+    <section id="section2">
+      <h3 id="collapse-section-2">Skills</h3>
+      <div id="content-section-2" class="container section-content">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h4>Langages</h4>
+            <ul>
+              <li>
+                <img class="skill-icon" src="assets/html.svg" alt="logo html">
+                HTML5
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/css.svg" alt="logo css">
+                CSS
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/js.svg" alt="logo javascript">
+                Javascript
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/mysql.svg" alt="logo mysql">
+                mySQL
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/php.svg" alt="logo php">
+                PHP
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h4>Frameworks et CMS</h4>
+            <ul>
+              <li>
+                <img class="skill-icon" src="assets/bootstrap.svg" alt="logo bootstrap">
+                Bootstrap
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/jquery.svg" alt="logo jquery">
+                jQuery
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/angular.svg" alt="logo angular">
+                AngularJS
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/nodejs.svg" alt="logo nodejs">
+                nodeJS
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/express.svg" alt="logo express">
+                Express
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/ionic.png" alt="logo ionic">
+                Ionic
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/wordpress.svg" alt="logo wordpress">
+                Wordpress
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h4>Autres</h4>
+            <ul>
+              <li>
+                <img class="skill-icon" src="assets/git.svg" alt="logo git">
+                Git
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/sass.svg" alt="logo sass">
+                Sass
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/p5.png" alt="logo p5">
+                p5.js
+              </li>
+              <li>
+                <img class="skill-icon" src="assets/photoshop.svg" alt="logo html">
+                Photoshop
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <h3 id="collapse-section-3">Experience</h3>
+      <div id="content-section-3" class="container section-content">
+        <ul>
+          <li>
+            <h4>Avrill 2017 - Juin 2017 : Développement front-end à <a href="http://www.alt-ecom.net/">ALT-ECOM</a> (stage)</h4>
+          </li>
+          <li>
+            <h4>Novembre 2014 - Mars 2015 : Agent d'accueil au Furet du Nord de Lille</h4>
+          </li>
+          <li>
+            <h4>Eté 2008,2009 et 2010 : Navette de transport à la Société de Secours Minière du Pas-de-Calais</h4>
+          </li>
+          <li>
+            <h4>depuis toujours : beaucoup trop de temps passé devant un écran d'ordinateur.</h4>
+          </li>
+        </ul>
+
+        <h4>Education : </h4>
+        <ul class="liste-education">
+          <li>novembre 2016 - mai2017 : Formation développeur d'applications web/mobile à POP School Lens</li>
+          <li>septembre 2011 - juillet 2014 Licence Langues,Litteratures et Cultures Etrangères mention Anglais</li>
+          <li>septembre 2010 - juillet 2011 Première année de Sciences de l'Education spécialité Français Langue Etrangère</li>
+          <li>septembre 2006 - juillet 2010 Licence Langues,Litteratures et Cultures Etrangères mention Japonais</li>
+          <li>juillet 2005 : Baccalauréat S option Sciences de l'Ingénieur</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="section4">
+      <h3 id="collapse-section-4">Miscellaneous</h3>
+      <div id="content-section-4" class="container section-content">
+        <h4>Quelques-uns de mes projets / experimentations / apprentissages</h4>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="https://github.com/loicpennequin/emploi-du-temps-fonctionnel">
+              <img class="project-img" src="assets/projet-planning.png" alt="screen planning"/>
+              Projet d'application de gestion de planning hebdomadaire pour organismes de formation.
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://esj-explore-2017.github.io/esj-explore-2017">
+              <img class="project-img" src="assets/projet-explore.png" alt="screen equipe explore"/>
+              Projet collaboratif entre Pop School Lens, l'Ecole Superieure de Journalise de Lille, et l'E-Artsup de Lille dans le cadre du concours l'Equipe Explore.
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://loicpennequin.github.io/moving_dot/">
+              <img class="project-img" src="assets/projet-movingdot.png" alt="screen moving-dot"/>
+              Petit jeu développé intégralement en vanilla Javascript dans le cadre de mon approfondissement personnel de ce langage.
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://loicpennequin.github.io/lava_lamp/">
+              <img class="project-img" src="assets/projet-lavalamp.png" alt="screen moving-dot"/>
+              Tentative de reproduction d'une lampe à lave à l'aide de la librairire p5.js.
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>mail: <a href="mailto:lo.pennequin@gmail.com">lo.pennequin@gmail.com</a></span>
+      <span>telephone: 06-42-01-59-90</span>
+      <span>vous pouvez consulter la version PDF de ce CV <a href="#">ICI</a></span>
+      <div class="back-to-top">
+        <a href="#home">haut de page</a>
+      </div>
+    </footer>
 
 
+    <!--LIBRARIES-->
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/p5.min.js"></script>
 
-        <main>
+    <!--SCRIPTS-->
+    <script src='js/header.js'></script>
+    <script src='js/effects.js'></script>
 
-            <section id="main-anchor" class="section1">
-                <div class="btn-section">A propos de moi</div>
-                <div id="content1" class="content hidden">
-
-                    <ul>
-                        <li>Nom: Pennequin</li>
-                        <li>Prénom: Loïc</li>
-						<li>Âge: 29 ans</li>
-                        <li>Permis B (véhiculé)</li>
-                        <li class="mobile-only">06.42.01.59.90</li>
-                        <li class="mobile-only">lo.pennequin@gmail.com</li>
-					</ul>
-                    </br>
-                    <p>Bonjour et bienvenue sur mon CV en ligne. Jeune développeur Web et mobile originaire de la régio du Nord Pas-De-Calais, j'ai décidé après un parcours atypique et décousu d'intégrer la formation POP School Lens. Je souhaitais mettre à profit ma passion pour l'informatique et la technologie afin d'acquerir des compétences professionellement pertinentes dans le domaine de la programmation Web. Des bases solides et une méthodologie adaptée m'ont ainsi rendu capable de mettre au point efficacement un site web ou une application mobile.  </p>
-                    <p>De nature créative, curieuse et perfectionniste, je suis attentif à l’évolution des tendances et des technologies. D’une grande capacité d’adaptation, je suis rigoureux et investi dans la réalisation de mes travaux et projets.</p>
-
-                </div>
-            </section>
-            <section class="section2">
-                <div class="btn-section">Formation</div>
-                <div id="content2" class="hidden content">
-
-                    <dl>
-                        <dt>nov.2016-mai2017</dt>
-                            <dd>Formation développeur web mobile à POP School Lens</dd>
-                        </br>
-						<dt>sept.2011-juil.2014</dt>
-							<dd>Licence Langues,Litteratures et Cultures Etrangères Mention Anglais</dd>
-                        </br>
-                        <dt>sept.2010-juil.2011</dt>
-                            <dd>Première année de Sciences de l'Education spécialité Français Langue Etrangère</dd>
-                        </br>
-						<dt>sept.2006-juil.2010</dt>
-							<dd>Licence Langues,Litteratures et Cultures Etrangères</dd>
-                            </br>
-						<dt>juil.2005</dt>
-							<dd>Baccalauréat S option Sciences de l'Ingénieur</dd>
-					</dl>
-
-                </div>
-            </section>
-            <section class="section3">
-                <div class="btn-section">Expérience</div>
-                <div id="content3" class="hidden content">
-
-                    <dl>
-                        <dt>nov.2014-mars.2015</dt>
-                            <dd>Agent d'accueil au Furet du Nord de Lille</dd>
-                        <dt>Eté 2008,2009 et 2010</dt>
-                            <dd>Navette de transport à la Société de Secours Minière du Pas-de-Calais</dd>
-					</dl>
-
-                </div>
-            </section>
-            <section class="section4">
-                <div class="btn-section">Compétences</div>
-                <div id="content4" class="hidden content">
-
-                    <div class="section-sous-titre">
-                        Langages
-                    </div>
-                    <div class="colonne">
-                        <ul>
-                            <li> <i class="skill-icon devicon-html5-plain"></i>HTML5</li>
-                            <li> <i class="skill-icon devicon-css3-plain"></i>CSS3</li>
-                            <li> <i class="skill-icon devicon-javascript-plain"></i>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="colonne">
-                        <ul>
-                            <li> <i class="skill-icon devicon-php-plain "></i>PhP</li>
-                            <li> <i class="skill-icon devicon-mysql-plain "></i>MySQL</li>
-                        </ul>
-                    </div>
-
-                    <div class="section-sous-titre">
-                        Frameworks et CMS
-                    </div>
-                    <div class="colonne">
-                        <ul>
-                            <li> <i class="skill-icon devicon-bootstrap-plain "></i>Bootstrap</li>
-                            <li> <i class="skill-icon devicon-jquery-plain "></i>Jquery</li>
-                            <li> <i class="skill-icon devicon-angularjs-plain "></i>AngularJS</li>
-                        </ul>
-                    </div>
-                    <div class="colonne">
-                        <ul>
-                            <li> <i class="skill-icon devicon-symfony-original "></i>Symfony</li>
-                            <li> <i class="skill-icon devicon-wordpress-plain "></i>WordPress</li>
-                            <li> Ionic</li>
-                        </ul>
-                    </div>
-
-                    <div class="section-sous-titre">
-                        Autres
-                    </div>
-                    <div class="section-4-others">
-                        <ul>
-                            <li>  <i class="skill-icon devicon-git-plain "></i>Git (gitflow, Githubflow, GitHub)</li>
-                            <li>  <i class="skill-icon devicon-sass-original "></i>Sass</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section5">
-                <div class="btn-section">Projets/Divers</div>
-                <div id="content5" class="hidden content">
-
-                    <div class="hobbies">
-                        <div class="section-sous-titre">Centres d'intérêt</div>
-                        <ul>
-                            <li>musique (pratique de la guitare, batterie, piano) </li>
-                            <li>arts graphiques (dessin, peinture, DAO)</li>
-                            <li>jeux videos (stratégie, jeux de cartes, MOBAs)</li>
-                            <li>cinema (Araki, Nolan, Von Trier...)</li>
-                        </ul>
-                    </div>
-
-                    </br>
-
-                    <div class="projets">
-                         <div class="section-sous-titre">Projets</div>
-
-                            <div class="projet">
-                                <a href="https://loicpennequin.github.io/Fusion-nouvel-an/" class="projet-image" target="blank">
-                                     <img src="new-year.png" alt="Projet Nouvel An" class="projet-image" ></a>
-                                <p>Projet de carte de voeux dans le cadre d'un concours organisé par la Grande Ecole du Numerique</p>
-
-                            </div>
-
-                             <div class="projet">
-                                 <a href="https://loicpennequin.github.io/Ezia-Polaris/" target="blank" class="projet-image">
-                                     <img src="ezia.png" alt="Ezia Polaris" class="projet-image"></a>
-                                <p>Projet de roman en ligne accompagné d'une plage musicale (en cours de développement)</p>
-                             </div>
-
-                             <div class="projet">
-                                 <a href="https://loicpennequin.github.io/moving_dot/" target="blank" class="projet-image">
-                                     <img src="moving_dot.png" alt="The Moving Dot" class="projet-image"></a>
-                                <p>Projet de mini jeu programmé en Vanilla Javascript en parrallèle de ma formation</p>
-                             </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <div class="contact">
-                <img src="photo.jpg" id="photo" alt="ma photo" />
-
-                <div class="contact-info"><a href="mailto:lo.pennequin@gmail.com">lo.pennequin@gmail	.com</a></div>
-                <div class="contact-info">06.42.01.59.90</div>
-
-                <a href="https://www.facebook.com/loic.pennequin" target="_blank"><img src="fb.png" class="logo" alt="FaceBook"></a>
-                <img src="twitter.png" class="logo" alt="FaceBook">
-                <a href="https://www.linkedin.com/in/lo%C3%AFc-pennequin-a90254133?trk=hp-identity-photo" target="_blank"><img src="linkedin.png" class="logo" alt="FaceBook"></a>
-                <a href="https://github.com/loicpennequin" target="_blank"><img src="github.png" class="logo" alt="GitHub"></a>
-            </div>
-
-        </main>
-
-        <img class="static-bg" src="header.jpg"/>
-
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/javascript.js"></script>
     </body>
 </html>

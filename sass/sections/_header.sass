@@ -1,0 +1,56 @@
+header
+  position: relative
+  color: $white
+  background: black
+  height: 600px
+  overflow: hidden
+
+
+.header-content
+  position: relative
+  z-index: 2
+  font-family: $font1
+  margin-top: 300px
+  transform: translateY(-50%)
+  width: 50%
+  padding: 20px
+  margin-left: auto
+  margin-right: auto
+
+  .title
+    text-shadow: 3px 3px 1px $color2, -3px -3px 1px $color1
+    margin-bottom: 25px
+
+  h1
+    @extend .title
+    font-size: 5em
+    letter-spacing: 2px
+    @media screen and (max-device-width: 768px)
+      font-size: 3em
+
+  h2
+    @extend .title
+    font-size: 2.5em
+
+.joke
+  font-size: 0.8em
+  position: absolute
+  bottom: 5px
+  right: 5px
+  z-index: 10
+  opacity: 0
+  padding: 30px
+  transition: all 0.5s
+  animation: joke-anim
+  animation-duration: 5s
+  animation-fill-mode: forwards
+  animation-delay: 2s
+
+@keyframes joke-anim
+  from, 80%
+    opacity: 0%
+  to
+    opacity: 0.5
+
+.arrow
+  margin-top: 40px

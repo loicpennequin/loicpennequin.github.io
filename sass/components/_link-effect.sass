@@ -1,0 +1,38 @@
+.link-effect-wrapper
+  position: relative
+  padding: 5px
+
+.link-border
+  background-color: $white
+  position: absolute
+  transition: all 0.7s
+
+.link-border-top
+  top: 0
+  left: 0
+  height: 1px
+  width: 0
+
+.link-border-bottom
+  bottom: 0
+  right: 0
+  height: 1px
+  width: 0
+
+.link-border-right
+  top: 0
+  right: 0
+  height: 0
+  width: 1px
+
+.link-border-left
+  top: 0
+  left: 0
+  height: 0
+  width: 1px
+
+.link-effect-trigger:hover ~ .link-border-top, .link-effect-trigger:hover ~ .link-border-bottom
+  width: 100%
+
+.link-effect-trigger:hover ~ .link-border-left, .link-effect-trigger:hover ~ .link-border-right
+  height: 100%
