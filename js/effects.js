@@ -27,4 +27,13 @@ $(document).ready(function(){
     })
   }
 
+  //hire me
+  $('.no').mouseenter(function(){
+    let currentMargin = $(this).css('margin-left'),
+        newMargin = parseInt(currentMargin) + 100 ;
+        console.log(newMargin);
+    $(this).css('margin-left', newMargin);
+  });
+
+
 });

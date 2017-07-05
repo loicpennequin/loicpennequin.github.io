@@ -287,6 +287,25 @@ a:hover {
   margin-bottom: 10px;
   transition: all 0.5s ease-in-out; }
 
+.hire-me label {
+  text-align: center;
+  font-size: 2em;
+  color: #cd442d;
+  display: block; }
+  @media screen and (max-device-width: 991px) {
+    .hire-me label {
+      display: none; } }
+
+.hire-me button {
+  background-color: #cd442d;
+  color: #ebf0f0;
+  border-radius: 10px;
+  font-size: 1.6em;
+  padding: 15px; }
+
+.no, .yes {
+  transition: all 0.5s; }
+
 footer {
   background: linear-gradient(#cd442d, #ad3926);
   color: #ebf0f0;
