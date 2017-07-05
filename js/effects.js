@@ -20,15 +20,6 @@ $(document).ready(function(){
     $('.nav-menu').toggleClass('nav-menu-display')
   })
 
-  //arrow image bounce
-  $('.arrow').hover(function(){
-    $(this).addClass('animated bounce')
-  })
-  $('.arrow').on('mouseleave', function(){
-    $(this).removeClass('animated bounce')
-
-  })
-
   //collapse
   for (let i=1; i < 5 ; i++){
     $('#collapse-section-' + i).click(function(){

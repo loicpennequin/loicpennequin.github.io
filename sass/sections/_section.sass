@@ -1,6 +1,11 @@
 section
   background-color: $white
-  margin-bottom: 10px
+  margin-bottom: 100px
+  padding-bottom: 15px
+  position: relative
+  z-index: 2
+  border-bottom: solid 5px $color1
+
 h3
   text-align: center
   color: $white
@@ -52,9 +57,36 @@ a:hover
 .liste-education
   padding-left: 30px
 
+.project
+  position: relative
+
+.project-legend
+  borderradius: 3px
+  border: solid 2px $color2
+  background-color: $white
+  position: absolute
+  top: 0
+  left: 15px
+  height: 100%
+  width: 90%
+  padding: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  transform: rotateY(180DEG)
+  opacity: 0
+  transition: all 0.5s ease-in-out
+
+.project:hover .project-legend
+  opacity: 1
+  transform: none
+
+.project:hover .project-img
+  opacity: 0
+  transform: rotateY(180DEG)
+
 .project-img
   width: 100%
   margin-bottom: 10px
-  transition: all 0.3s
-  &:hover
-    filter: brightness(90%) contrast(125%)
+  transition: all 0.5s ease-in-out

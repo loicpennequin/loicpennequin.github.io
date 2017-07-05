@@ -113,9 +113,9 @@
 header {
   position: relative;
   color: #ebf0f0;
-  background: black;
+  background: transparent;
   height: 600px;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .header-content {
   position: relative;
@@ -132,12 +132,14 @@ header {
     margin-bottom: 25px; }
   .header-content h1 {
     font-size: 5em;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    animation: h1-anim 1.2s forwards; }
     @media screen and (max-device-width: 768px) {
       .header-content h1 {
         font-size: 3em; } }
   .header-content h2 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    animation: h2-anim 1.2s forwards; }
 
 .joke {
   font-size: 0.8em;
@@ -159,11 +161,45 @@ header {
   to {
     opacity: 0.5; } }
 .arrow {
-  margin-top: 40px; }
+  margin-top: 40px;
+  animation: arrow-anim 1.5s infinite; }
 
+@keyframes arrow-anim {
+  from, to {
+    transform: none;
+    opacity: 1; }
+  60% {
+    transform: translateY(50px);
+    opacity: 0; } }
+#sketch {
+  position: fixed;
+  z-index: 1; }
+
+@keyframes h1-anim {
+  from {
+    transform: translateX(-100%) rotateZ(-20DEG);
+    opacity: 0; }
+  95% {
+    transform: rotateZ(5DEG);
+    opacity: 1; }
+  to {
+    transform: none; } }
+@keyframes h2-anim {
+  from {
+    transform: translateX(100%) rotateZ(20DEG);
+    opacity: 0; }
+  95% {
+    transform: rotateZ(-5DEG);
+    opacity: 1; }
+  to {
+    transform: none; } }
 section {
   background-color: #ebf0f0;
-  margin-bottom: 10px; }
+  margin-bottom: 100px;
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  border-bottom: solid 5px #cd442d; }
 
 h3 {
   text-align: center;
@@ -217,12 +253,39 @@ a:hover {
 .liste-education {
   padding-left: 30px; }
 
+.project {
+  position: relative; }
+
+.project-legend {
+  borderradius: 3px;
+  border: solid 2px #849ac2;
+  background-color: #ebf0f0;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 100%;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotateY(180DEG);
+  opacity: 0;
+  transition: all 0.5s ease-in-out; }
+
+.project:hover .project-legend {
+  opacity: 1;
+  transform: none; }
+
+.project:hover .project-img {
+  opacity: 0;
+  transform: rotateY(180DEG); }
+
 .project-img {
   width: 100%;
   margin-bottom: 10px;
-  transition: all 0.3s; }
-  .project-img:hover {
-    filter: brightness(90%) contrast(125%); }
+  transition: all 0.5s ease-in-out; }
 
 footer {
   background: linear-gradient(#cd442d, #ad3926);
@@ -253,7 +316,7 @@ html, body {
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
-  background-color: #ebf0f0; }
+  background-color: black; }
 
 ul {
   list-style: none;

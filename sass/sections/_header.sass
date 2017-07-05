@@ -1,9 +1,9 @@
 header
   position: relative
   color: $white
-  background: black
+  background: transparent
   height: 600px
-  overflow: hidden
+  overflow-x: hidden
 
 
 .header-content
@@ -25,12 +25,15 @@ header
     @extend .title
     font-size: 5em
     letter-spacing: 2px
+    animation: h1-anim 1.2s forwards
     @media screen and (max-device-width: 768px)
       font-size: 3em
 
   h2
     @extend .title
     font-size: 2.5em
+    animation: h2-anim 1.2s forwards
+
 
 .joke
   font-size: 0.8em
@@ -54,3 +57,36 @@ header
 
 .arrow
   margin-top: 40px
+  animation: arrow-anim 1.5s infinite
+
+@keyframes arrow-anim
+  from, to
+    transform: none
+    opacity: 1
+  60%
+    transform: translateY(50px)
+    opacity: 0
+
+#sketch
+  position: fixed
+  z-index: 1
+
+@keyframes h1-anim
+  from
+    transform: translateX(-100%) rotateZ(-20DEG)
+    opacity: 0
+  95%
+    transform: rotateZ(5DEG)
+    opacity: 1
+  to
+    transform: none
+
+@keyframes h2-anim
+  from
+    transform: translateX(100%) rotateZ(20DEG)
+    opacity: 0
+  95%
+    transform: rotateZ(-5DEG)
+    opacity: 1
+  to
+    transform: none
