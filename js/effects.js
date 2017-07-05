@@ -29,10 +29,14 @@ $(document).ready(function(){
 
   //hire me
   $('.no').mouseenter(function(){
-    let currentMargin = $(this).css('margin-left'),
-        newMargin = parseInt(currentMargin) + 100 ;
-        console.log(newMargin);
-    $(this).css('margin-left', newMargin);
+    $(this).css('opacity', '0')
+    $('.yes').css('animation', 'yes-anim 0.6s forwards')
+  });
+
+  $('.no').mouseleave(function(){
+    $(this).css('opacity', '1');
+    $('.yes').css('animation', 'none')
+
   });
 
 

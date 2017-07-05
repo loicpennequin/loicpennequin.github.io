@@ -106,5 +106,13 @@ a:hover
   font-size: 1.6em
   padding: 15px
 
-.no, .yes
-  transition: all 0.5s
+.no
+  transition: all 0.5
+
+@keyframes yes-anim
+  from, to
+    transform: none
+  20%, 60%
+    transform: rotateZ(-5DEG)
+  40%, 80%
+    transform: rotateZ(5DEG)
