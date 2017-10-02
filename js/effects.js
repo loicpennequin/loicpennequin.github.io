@@ -21,7 +21,7 @@ $(document).ready(function(){
   })
 
   //collapse
-  for (let i=1; i < 5 ; i++){
+  for (let i=1; i < 6 ; i++){
     $('#collapse-section-' + i).click(function(){
       $('#content-section-' + i).slideToggle(500)
     })

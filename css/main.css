@@ -253,39 +253,14 @@ a:hover {
 .liste-education {
   padding-left: 30px; }
 
-.project {
-  position: relative; }
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px; }
 
 .project-legend {
-  borderradius: 3px;
-  border: solid 2px #849ac2;
-  background-color: #ebf0f0;
-  position: absolute;
-  top: 0;
-  left: 15px;
-  height: 100%;
-  width: 90%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transform: rotateY(180DEG);
-  opacity: 0;
-  transition: all 0.5s ease-in-out; }
-
-.project:hover .project-legend {
-  opacity: 1;
-  transform: none; }
-
-.project:hover .project-img {
-  opacity: 0;
-  transform: rotateY(180DEG); }
-
-.project-img {
-  width: 100%;
-  margin-bottom: 10px;
-  transition: all 0.5s ease-in-out; }
+  max-width: 50%;
+  padding-left: 20px; }
 
 .hire-me label {
   text-align: center;
@@ -347,8 +322,5 @@ html, body {
 ul {
   list-style: none;
   padding-left: 0; }
-
-.test {
-  border: solid 5px red; }
 
 /*# sourceMappingURL=main.css.map */
